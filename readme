@@ -1,0 +1,34 @@
+EcoTracker — Hyper-Minimal Carbon Dashboard
+EcoTracker is a mobile-first, single-page progressive web application designed to help individuals effortlessly understand, track, and mitigate their daily environmental footprint. By combining immediate data entry with game design principles, the application converts complex carbon metrics into actionable insights and rewarding lifestyle shifts. 
+------------------------------
+🎯 Project Description & Value Proposition
+Most carbon calculators are tedious, relying on annual estimates and static forms that fail to change daily habits. EcoTracker solves this by breaking down sustainability into a dynamic, daily habit.
+The application focuses on the three highest-impact pillars of individual emissions: Home Utilities, Daily Commuting, and Dietary Choices. Users receive real-time visual feedback on how their routine affects the planet and earn gamified points for choosing sustainable alternatives.
+------------------------------
+✨ Core Features
+
+* Real-Time Mathematical Engine: Instantly calculates direct carbon impact in kilograms of carbon dioxide equivalent (kg CO₂e) as sliders are moved—no page reloads required. 
+* Gamified Rewards & Challenges: Features an automated "Green Challenge" engine that detects high-carbon habits (e.g., solo car commuting) and awards Eco-Points when a user logs a sustainable swap. 
+* Historical Analytics Visualisation: Includes a dedicated analytics tab with a minimalist 7-day trailing emission chart, metric tracking, and user tier rankings based on positive habit formation.
+* Zero-Server Data Persistence: Uses localized localStorage to securely save, sync, and hydrate user preferences and lifetime reward balances entirely on the client browser.
+* Premium Minimalist UI: Built with a high-contrast, modern aesthetic using crisp typography, tactile touch sliders, and animated SVG progress loops.
+
+------------------------------
+ 📊 Parameters & Mathematical Framework## Input Metrics Captured
+
+   1. Home Utilities: Monthly power consumption (0 to 1,000 kWh).
+   2. Daily Commuting: Commute distances (0 to 100 km) mapped against distinct efficiency profiles (Gasoline Vehicle, EV, Public Transit, Active Walking/Biking).
+   3. Dietary Choices: Direct daily mass consumption of high-impact ruminant meat products (0.0 to 1.0 kg).
+
+- Key Output Variables
+
+* total_daily_footprint: Aggregate carbon impact score per day (expressed in kg CO₂e).
+* breakdown[Energy / Transit / Food]: Segmented micro-scores tracking independent pillar impacts.
+* eco_points: A gamified cumulative currency tracking consumer behavior wins over time.
+
+------------------------------
+⚙️ Architecture & Tech Stack
+
+* Frontend Interface: Semantic HTML5 structured for mobile-first responsiveness.
+* Styling Engine: Tailwind CSS framework leveraging fluid utility primitives and micro-interactions.
+* State & Logic Management: Vanilla JavaScript (ES6) state machine executing instantaneous structural emission equations.
